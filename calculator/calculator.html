@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="calculator.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+	<div class="background"></div>
+	<div class="container">
+
+		<div class="calculator">
+
+			<div class="form-group">
+				<input type="text" name="showvalue" id="showvalue" class="showvalue" autofocus />
+			</div>
+
+			<div class="btn-group">
+				<button id="btn" class="btn reset" onclick="reset()">C</button>
+				<button class="btn colorr itag" onclick="del()"><i class="fas fa-backspace"></i></button>
+				<button class="btn colorr" onclick="display('%')">%</button>
+				<button class="btn colorr" onclick="display('/')">/</button>
+				
+				<button class="btn num" onclick="display('7')">7</button>
+				<button class="btn num" onclick="display('8')">8</button>
+				<button class="btn num" onclick="display('9')">9</button>
+				<button class="btn colorr" onclick="display('*')">x</button>
+
+				<button class="btn num" onclick="display('4')">4</button>
+				<button class="btn num" onclick="display('5')">5</button>
+				<button class="btn num" onclick="display('6')">6</button>
+				<button class="btn colorr minus" onclick="display('-')">-</button>
+
+				<button class="btn num" onclick="display('1')">1</button>
+				<button class="btn num" onclick="display('2')">2</button>
+				<button class="btn num" onclick="display('3')">3</button>
+				<button class="btn colorr" onclick="display('+')">+</button>
+
+				<button class="btn num zero" onclick="display('0')">0</button>
+				<button class="btn" onclick="display('.')">.</button>
+				<button class="btn colorr" onclick="calculate()">=</button>
+
+
+			</div>
+		
+		</div>
+	</div>
+	
+
+
+	
+
+	<script src="calculator.js" type="text/javascript"></script>
+</body>
+</html>
